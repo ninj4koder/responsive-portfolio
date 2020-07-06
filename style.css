@@ -20,27 +20,6 @@ body {
   background-color: #ececec;
 }
 
-.clearfix {         /*  clearfix hack - I had to deal with the img creeping out from the box  */
-  overflow: auto;
-}
-
-
-                    /*  website is redesigned for MOBILE FIRST approach  */
-
-
-img {
-  width: 100%;
-}
-
-#Portfolio img, #Contact img {
-  border-radius: 10px;
-  margin: 0 auto;
-}
-
-#Portfolio p, #Inspirations p {
-  width: 100%;
-}
-
 div.container {
   width: 95%;
   margin: 10px auto;
@@ -48,11 +27,13 @@ div.container {
   border-radius: 20px;
 }
 
-img.header-img {                /*  -- logo --  */
-  display: block;
-  width: 80%;
-  margin: 40px auto;
+.clearfix {         /*  clearfix hack - I had to deal with the img creeping out from the box  */
+  overflow: auto;
 }
+
+                    /*  website is redesigned for MOBILE FIRST approach  */
+
+
 
 hr {                            /*  -- elements --  */
   width: 85%;
@@ -60,8 +41,8 @@ hr {                            /*  -- elements --  */
   background-color: #b3b3b3;
 }
 
-h1, h2, p {        /*  Grouping all common properties of the text  */
-  font-family: BenchNine;
+h1, h2, p {        /*  <= Grouping all common properties of the text  */
+  font-family: BenchNine;          /*  also text styling  */
   margin: 0 auto;
   width: 70%;
   color: #767978;
@@ -72,6 +53,9 @@ a, li {
 }
 h1, h2 {
   color: #666;
+}
+#Portfolio p, #Inspirations p {
+  width: 100%;
 }
 
 h1 {
@@ -90,7 +74,11 @@ li {
   font-size: 19px;
 }
 
-nav ul {
+p.last {
+  padding-bottom: 40px;
+}
+
+nav ul {                    /*  styling navigation section  */
   display: flex;
   justify-content: center;
   padding-left: 0;
@@ -114,11 +102,7 @@ nav a {
   letter-spacing: 3px;
 }
 
-p.last {
-  padding-bottom: 40px;
-}
-
-form label {
+form label {               /*  styling form  */
   display: block;
   margin-bottom: 8px;
 }
@@ -140,6 +124,21 @@ form textarea {
 
 form button {
   margin: 20px 8px 0 0;
+}
+
+img {                            /* IMG styling */
+  width: 100%;
+}
+
+#Portfolio img, #Contact img {
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+img.header-img {                /*  -- logo --  */
+  display: block;
+  width: 80%;
+  margin: 40px auto;
 }
 
 a {                         /*  All link LOVE HATE properties  */
@@ -168,7 +167,7 @@ a:active  { color: #f9f9f9; }
   margin: 0 auto;
 }
 
-.welcome-huge-writing {
+.welcome-huge-writing {   /*  big "Hi!"" at the top of the page  */
   font-size: 130px;
   padding: 80px 0;
 }
@@ -216,7 +215,6 @@ a:active  { color: #f9f9f9; }
 }
 
 @media all and (min-width: 600px) {
-  //body { background-color: red;} /*  temp  */
 
   div.container {
   width: 70%;
@@ -242,7 +240,4 @@ a:active  { color: #f9f9f9; }
   .flex-desktop-horizontal {
     flex-direction: row;
   }
-
-
-
 }
