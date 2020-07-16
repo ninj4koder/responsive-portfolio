@@ -51,9 +51,14 @@ a, li {
   font-family: BenchNine;
   color: #767978;
 }
-h1, h2 {
+h1, h2, h3 {
   color: #666;
 }
+
+h3 {
+  font-family: BenchNine;
+}
+
 #Portfolio p, #Inspirations p {
   width: 100%;
 }
